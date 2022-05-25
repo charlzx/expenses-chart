@@ -1,3 +1,42 @@
+let main = document.querySelector('main')
+
+main.innerHTML = `
+   <section>
+      <div>
+        <p>My balance</p>
+        <p>$921.48</p>
+      </div>
+      
+      <div>
+        <img src="images/logo.svg" alt="logo of company">
+      </div>
+   </section>
+
+   <section>
+      <div id="display">
+        <p>Spending - Last 7 days</p>
+        
+        <div id="error"></div>
+        <div id="chart"></div>
+      </div>
+
+      <hr>
+
+      <div id="stats">
+        <p>Total this month</p>
+
+        <section>
+          <div>
+            <p>$478.33</p>
+          </div>
+          <div>
+            <p>+2.4%</p>
+            <p>from last month</p>
+          </div>
+        </section>
+      </div>
+   </section>
+`
 let error = document.querySelector('#error')
 let chart = document.querySelector('#chart')
 
