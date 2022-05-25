@@ -41,7 +41,7 @@ let error = document.querySelector('#error')
 let chart = document.querySelector('#chart')
 
 const getData = async () => {
-   let request = await fetch('https://github.com/charlzx/expenses-chart/blob/master/json/data.json')
+   let request = await fetch('json/data.json')
 
    if (request.status !== 200) {
       error.innerHTML = 'couldn\'t fetch data'
